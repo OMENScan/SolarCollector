@@ -1,0 +1,202 @@
+SAY:[+] ******************************************
+SAY:[+] * SolarCollector: Solar Collector v1.0   *
+SAY:[+] *  Collect SolarWinds IOCs               *
+SAY:[+] ******************************************
+SET:CopyPath=Part
+ACQ:\Solar\Prog
+LST:FilesAndHashes.txt
+CN0:0
+CKY:&LS0
+ Say:[+] SolarCollector: At least one Affected File(s) Found on this machine
+ CN0:1
+END:
+N==:&CN0 0
+ Say:[+] SolarCollector: No Affected File(s) Found on this machine
+ BYE:
+END:
+SAY:[+] SolarCollector: Collecting Affected Files From List...
+CPY:"&LS0" "&ACQ\&LS1"
+SAY:[+] SolarCollector: Checking Affected Files for MD5 Hash Match...
+CN0:0
+CKY:"${ProgramFiles} (x86)\N-able Technologies\Windows Software Probe\bin\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\N-able Technologies\Windows Software Probe\bin\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${ProgramFiles} (x86)\Solarwinds\Network Topology Mapper\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\Solarwinds\Network Topology Mapper\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${ProgramFiles} (x86)\Solarwinds\Network Topology Mapper\Service\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\Solarwinds\Network Topology Mapper\Service\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${ProgramFiles} (x86)\SolarWinds\Orion\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\SolarWinds\Orion\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${ProgramFiles} (x86)\SolarWinds\Orion\DPI\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\SolarWinds\Orion\DPI\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${ProgramFiles} (x86)\SolarWinds\Orion\NCM\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\SolarWinds\Orion\NCM\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${ProgramFiles} (x86)\SolarWinds\Orion\Interfaces.Discovery\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\SolarWinds\Orion\Interfaces.Discovery\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${ProgramFiles} (x86)\SolarWinds\Orion\DPA\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\SolarWinds\Orion\DPA\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${ProgramFiles} (x86)\SolarWinds\Orion\HardwareHealth\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\SolarWinds\Orion\HardwareHealth\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${ProgramFiles} (x86)\SolarWinds\Orion\Interfaces\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\SolarWinds\Orion\Interfaces\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${ProgramFiles} (x86)\SolarWinds\Orion\NetFlowTrafficAnalysis\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\SolarWinds\Orion\NetFlowTrafficAnalysis\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${ProgramFiles} (x86)\SolarWinds\Orion\NPM\SolarWinds.Orion.Core.BusinessLayer.dll"
+  HSH:"${ProgramFiles} (x86)\SolarWinds\Orion\NPM\SolarWinds.Orion.Core.BusinessLayer.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${SystemDrive}\InetPub\SolarWinds\bin\app_web_logoimagehandler.ashx.b6031896.dll"
+  HSH:"${SystemDrive}\InetPub\SolarWinds\bin\app_web_logoimagehandler.ashx.b6031896.dll"
+  EQU:&HSH &LS2
+    SAY:[+] SolarCollector: Matching Hash Found: &HSH
+    CN0:++
+  END:
+END:
+CKY:"${windir}\SysWOW64\netsetupsvc.dll"
+  SAY:[+] SolarCollector: Matching File Found: netsetupsvc.dll
+  CN0:++
+END:
+EQU:&CN0 0 
+ SAY:[!] SolarCollector: Suspicious SolarWinds MD5 Hashes Not Detected...  Exiting...
+ BYE:
+END:
+SAY:[+] SolarCollector: Suspicious SolarWinds Files Were Found - Now Running Expanded Collection...
+SAY:
+SAY:[+] SolarCollector: Now Dumping Memory...
+ACQ:\MemDump
+N>>:&DSA &MEM
+ EXE:\MEM\winpmem_3.3rc3.exe --output &Acq\WinPmemDump.Raw --logfile &Acq\WinPmemDump.Log --volume_format raw -dd -t
+END:
+N<<:&DSA &MEM
+ SAY:[!] SolarCollector: Insufficient Disk Space to Dump Memory. Bypassing Memory Dump.
+END:
+SAY:[+] SolarCollector: Collecting Prefetch...
+ACQ:\Prf
+CPY:"&Win\prefetch\**\*" "&Acq"
+SAY:[+] SolarCollector: Copy Raw $MFT(s)...
+DSK:Fixed
+ACQ:\RawData
+EXE:\TSK\fcat.exe $MFT \\.\&dsk: --exestdout=&acn\RawData\MFT-&Dsk
+SAY:[+] SolarCollector: Copy Raw $LogFile...
+EXE:\TSK\fcat.exe $LogFile \\.\&dsk: --exestdout=&acn\RawData\LogFile-&Dsk
+SAY:[+] SolarCollector: Collecting Group Policy...
+SYS:GPResult /R /Z --exestdout=&acn\GPResult.txt
+SAY:[+] SolarCollector: Collecting Registry...
+ACQ:\Reg
+EXE:\TSK\fcat.exe /Windows/System32/Config/SECURITY \\.\${SYSTEMDRIVE} --exestdout=&acn\Reg\SECURITY
+EXE:\TSK\fcat.exe /Windows/System32/Config/SOFTWARE \\.\${SYSTEMDRIVE} --exestdout=&acn\Reg\SOFTWARE
+EXE:\TSK\fcat.exe /Windows/System32/Config/SAM \\.\${SYSTEMDRIVE} --exestdout=&acn\Reg\SAM
+EXE:\TSK\fcat.exe /Windows/System32/Config/SYSTEM \\.\${SYSTEMDRIVE} --exestdout=&acn\Reg\SYSTEM
+CPY:"&Win\AppCompat\Programs\Amcache.hve" "&Acq"
+SAY:[+] SolarCollector: Collecting EventViewer Logs...
+ACQ:\Evt
+ACQ:\Evt\Sys32
+CPY:"&Win\System32\winevt\Logs\*" "&Acq"
+ACQ:\Evt\Nativ
+CPY:"&Win\sysnative\winevt\Logs\*" "&Acq"
+SAY:[+] SolarCollector: Collecting Etc Directory, and SRUM...
+ACQ:\SYS
+ACQ:\SYS\Sys32
+CPY:"&Win\System32\Drivers\Etc\*" "&Acq"
+CPY:"&Win\System32\sru\SRUDB.dat" "&Acq"
+SAY:[+] SolarCollector: Collecting Hosts And Services Directory...
+ACQ:\SYS\Nativ
+CPY:"&Win\sysnative\Drivers\Etc\*" "&Acq"
+CPY:"&Win\sysnative\sru\SRUDB.dat" "&Acq"
+SAY:[+] SolarCollector: Collecting Environment Variables...
+ACQ:\SYS
+SYS:CMD /c Set --exestdout=&acn\SYS\EnVar.dat
+SAY:[+] SolarCollector: Collecting Patch List...
+SYS:WMIC qfe list --exestdout=&acn\SYS\QFEList.dat
+SAY:[+] SolarCollector: Collecting Process Information...
+SYS:Tasklist /v --exestdout=&acn\SYS\Tasklist.dat
+SYS:Tasklist /M --exestdout=&acn\SYS\TaskAll.dat
+SAY:[+] SolarCollector: Collecting Connection Information...
+SYS:netstat -abno  --exestdout=&acn\SYS\Netstat-abno.dat
+SAY:[+] SolarCollector: Collecting IP Config Information...
+SYS:IPConfig /all --exestdout=&acn\SYS\IPConfig.dat
+SYS:IPConfig /DisplayDNS --exestdout=&acn\SYS\IPCfgDNS.dat
+SAY:[+] SolarCollector: Collecting ARP Information...
+SYS:arp -a --exestdout=&acn\SYS\ArpInfo.dat
+SAY:[+] SolarCollector: Collecting NetBIOS Information...
+CKY:&Win\System32\NBTStat.exe
+ SYS:&Win\System32\NBTStat.exe -scn --exestdout=&acn\SYS\NetBios.dat
+END:
+CKY:&Win\sysnative\NBTStat.exe
+ SYS:&Win\sysnative\NBTStat.exe -scn --exestdout=&acn\SYS\NetBios-2.dat
+END:
+SAY:[+] SolarCollector: Collecting Scheduled Task Information...
+SYS:At --exestdout=&acn\SYS\SchedTasks.dat
+SYS:Schtasks /query /fo LIST /v --exestdout=&acn\SYS\SchedTasks-2.dat
+SAY:[+] SolarCollector: Collecting Services Information...
+SYS:Net Start --exestdout=&acn\SYS\Services.dat
+SYS:sc query type= service state= all --exestdout=&acn\SYS\Services-2.dat
+SYS:Tasklist /SVC --exestdout=&acn\SYS\Services-3.dat
+SAY:[+] SolarCollector: Collecting User Registry...
+ACQ:\Reg
+FOR:C:\Users\*\ntuser.dat
+ACQ:\Reg\&FO2
+EXE:\TSK\fcat.exe /&FO1/&FO2/&FO3 \\.\${SYSTEMDRIVE} --exestdout=&acn\Reg\&FO2\&FNM
+SAY:[+] SolarCollector: Collecting $Recycle.Bins...
+DSK:Fixed
+ACQ:\RBin
+CPY:"&Dsk:\$Recycle.Bin\**\*" "&Acq"
+SAY:[+] SolarCollector: Acquisition Complete, Hashing Artifacts...
+HSH:ACQ

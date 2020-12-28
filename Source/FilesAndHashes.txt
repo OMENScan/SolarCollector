@@ -1,0 +1,14 @@
+"C:\Program Files (x86)\N-able Technologies\Windows Software Probe\bin\SolarWinds.Orion.Core.BusinessLayer.dll",Probe\Bin,02af7cec58b9a5da1c542b5a32151ba1
+"C:\Program Files (x86)\Solarwinds\Network Topology Mapper\SolarWinds.Orion.Core.BusinessLayer.dll",Mapper,08e35543d6110ed11fdf558bb093d401
+"C:\Program Files (x86)\Solarwinds\Network Topology Mapper\Service\SolarWinds.Orion.Core.BusinessLayer.dll",Mapper\Service,b91ce2fa41029f6955bff20079468448
+"C:\Program Files (x86)\SolarWinds\Orion\SolarWinds.Orion.Core.BusinessLayer.dll",Orion,d5aad0d248c237360cf39c054b654d69
+"C:\Program Files (x86)\SolarWinds\Orion\DPI\SolarWinds.Orion.Core.BusinessLayer.dll",Orion\DPI,2c4a910a1299cdae2a4e55988a2f102e
+"C:\Program Files (x86)\SolarWinds\Orion\NCM\SolarWinds.Orion.Core.BusinessLayer.dll",Orion\NCM,846e27a652a5e1bfbd0ddd38a16dc865
+"C:\Program Files (x86)\SolarWinds\Orion\Interfaces.Discovery\SolarWinds.Orion.Core.BusinessLayer.dll",Orion\Discovery,baa3d3488db90289eb2889c1a2acbcde
+"C:\Program Files (x86)\SolarWinds\Orion\DPA\SolarWinds.Orion.Core.BusinessLayer.dll",Orion\DPA,e18a6a21eb44e77ca8d739a72209c370
+"C:\Program Files (x86)\SolarWinds\Orion\HardwareHealth\SolarWinds.Orion.Core.BusinessLayer.dll",Orion\HWHealth,3e329a4c9030b26ba152fb602a1d5893
+"C:\Program Files (x86)\SolarWinds\Orion\Interfaces\SolarWinds.Orion.Core.BusinessLayer.dll",Orion\Interfaces,4f2eb62fa529c0283b28d05ddd311fae
+"C:\Program Files (x86)\SolarWinds\Orion\NetFlowTrafficAnalysis\SolarWinds.Orion.Core.BusinessLayer.dll",Orion\NetFlow,56ceb6d0011d87b6e4d7023d7ef85676
+"C:\Program Files (x86)\SolarWinds\Orion\NPM\SolarWinds.Orion.Core.BusinessLayer.dll",Orion\NPM,Placeholder
+"C:\InetPub\SolarWinds\bin\app_web_logoimagehandler.ashx.b6031896.dll",InetPub,Placeholder
+"C:\Windows\SysWOW64\netsetupsvc.dll",SysWow64,Placeholder
