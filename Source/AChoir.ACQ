@@ -2,7 +2,7 @@ SAY:[+] ******************************************
 SAY:[+] * SolarCollector: Solar Collector v1.0   *
 SAY:[+] *  Collect SolarWinds IOCs               *
 SAY:[+] ******************************************
-SET:CopyPath=Part
+SET:CopyPath=None
 ACQ:\Solar\Prog
 LST:FilesAndHashes.txt
 CN0:0
@@ -117,6 +117,7 @@ EQU:&CN0 0
  SAY:[!] SolarCollector: Suspicious SolarWinds MD5 Hashes Not Detected...  Exiting...
  BYE:
 END:
+SET:CopyPath=Part
 SAY:[+] SolarCollector: Suspicious SolarWinds Files Were Found - Now Running Expanded Collection...
 SAY:
 SAY:[+] SolarCollector: Now Dumping Memory...

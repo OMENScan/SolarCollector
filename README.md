@@ -19,3 +19,4 @@ https://github.com/fireeye/sunburst_countermeasures
 Versions:
 12/27/2020 - Alpha1 Version (MD5:6f268e7a8277553340c3a0ff88c01237)
 
+01/01/2021 - Alpha1.1 Version (MD5: 93798a214ecfee7608957dd6ae13be91)
